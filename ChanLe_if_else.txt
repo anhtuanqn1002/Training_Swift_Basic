@@ -1,0 +1,11 @@
+﻿import UIKit
+
+var a : Int = 5
+//var b : Float = 5
+
+if ( a % 2 != 0) {
+    print("Số đã cho là số lẻ")
+}
+else {
+    print("Số đã cho là số chẵn")
+}
