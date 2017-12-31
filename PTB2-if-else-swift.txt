@@ -1,0 +1,46 @@
+﻿//: Playground - noun: a place where people can play
+import UIKit
+
+var a:Float=1
+var b:Float=3
+var c:Float=9
+var tag:Float
+var x1:Float
+var x2:Float
+
+if( a == 0){
+    if(b == 0){
+        if(c == 0)
+        {
+             print("Phương trình đã cho có VS nghiêm")
+        }
+        else
+        {
+             print("Phương trình đã cho vô nghiệm ")
+        }
+    }
+    else
+        {
+        x1 = ((-c)/b)
+        print("Phương trình đã cho có nghiệm ",x1)
+        }
+    
+}
+else {
+    tag = ((b*b) - 4*a*c)
+    if ( tag < 0 )
+        {
+        print("Phương trình đã cho vô nghiệm")
+        }
+    if(tag > 0)
+    {
+        x1 = ((-b) + sqrt(tag))/(2*a)
+        x2 = ((-b) - sqrt(tag))/(2*a)
+        print("Phương trình đã cho có 2 ngiệm phân biệt",x1,x2)
+    }
+    if(tag == 0)
+    {
+        x1 = ((-b)/( 2*a))
+        print("Phương trình có nghiệm kép x1= x2=",x1)
+    }
+}
