@@ -1,0 +1,10 @@
+﻿import UIKit
+
+var a:Int=8
+switch (a % 2) {
+case 0:
+print("Số đã cho là số chẳn")
+default:
+    print("Số đã cho là số lẻ")
+}
+
