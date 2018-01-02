@@ -1,4 +1,5 @@
-﻿import UIKit
+//Đề bai: kiểm tra chẳn lẻ
+import UIKit
 
 var a : Int = 5
 //var b : Float = 5
