@@ -62,8 +62,39 @@ func time(hour1: Int,minute1: Int,hour2: Int,minute2: Int) -> Int {
 var KQQ : Int
 KQQ = time(hour1: 12, minute1: 3, hour2: 13, minute2: 10)
 print(abs(KQQ))
-
-
+//----đảo ngược mảng----
+func nguoc(ar: [Int])-> [Int]{
+    var null: [Int] = []
+    for i in ar {
+        null.insert(i, at: 0)
+    }
+    return null
+}
+var KQ3: [Int]
+KQ3 = nguoc(ar: [1,2])
+print(KQ3)
+//----Hàm tính năm nhuận----
+func year(y: Int) {
+    if y % 4 == 0 && y % 100 != 0 {
+        print("Đây là năm nhuận")
+    } else {
+        print("Đây không phải là năm nhuận")
+    }
+}
+year(y: 2020)
+//----Chuyển điểm số thành điểm chữ---
+func diem(number: Float) {
+    if number < 5 {
+        print("Điểm kém")
+    } else if 5 < number && number < 7 {
+        print("Điểm TB ")
+    } else if 7 <= number && number < 9 {
+        print("Điểm Khá")
+    } else if 9 <= number && number <= 10 {
+        print("Điểm giỏi")
+    }
+}
+diem(number: 9)
 
 
 
