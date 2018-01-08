@@ -95,6 +95,24 @@ func diem(number: Float) {
     }
 }
 diem(number: 9)
+//---Tính ngày trong tháng của năm
+func thangnhuan(year: Int,month: Int) {
+    if month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12 {
+        print("Tháng",month,"năm",year,"có 31 ngày")
+    }
+    if month == 4 || month == 6 || month == 9 || month == 11 {
+        print("Tháng",month,"năm",year,"có 30 ngày")
+    }
+    if month == 2 && year % 4 == 0 && year % 100 != 0 {
+        print("Tháng",month,"năm",year,"có 29 ngày")
+    }
+    if month == 2 && year % 4 != 0 && year % 100 == 0 {
+        print("Tháng",month,"năm",year,"có 28 ngày")
+    }
+}
+thangnhuan(year: 2016, month: 2)
+
+
 
 
 
